@@ -32,7 +32,11 @@ Additionally, feature generation requires TensorFlow-1.4.0.
  
  file model_data/yolo.h5 is to large to upload ,so you need convert it from Darknet Yolo model to a keras model by yourself
  
-# Test
+# use
+需要提前下载好yolo.h5文件，放到目录下：model_data/yolo.h5
+
+如果目标丢失再重现就重现编号，目标发生形变能记录
+
  use : 'video_capture = cv2.VideoCapture('path to video')' use a video file or 'video_capture = cv2.VideoCapture(0)' use camera
  
  speed : when only run yolo detection about 11-13 fps  , after add deep_sort about 11.5 fps
